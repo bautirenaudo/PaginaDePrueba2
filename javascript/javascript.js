@@ -1,27 +1,23 @@
-function abrirMenu(){
+function main(){
     //variables
     let nav=document.getElementById("nav");
     let iconMenu=document.getElementById("icon-menu");
-    let iconX=document.getElementById("icon-x");
-    
-    //eventos
+    let iconMenu2=document.getElementById("icon-menu2");
 
-    nav.style.cssText="transform: translateX(0%); transition: all .3s;";
-    iconMenu.style.cssText="display:none;";
-    iconX.style.cssText="display:block;";
+    //eventos
+    iconMenu.onclick= function abrir(){
+        nav.style.cssText="transform: translateY(0%);"
+        iconMenu2.style.cssText=" visibility:visible ;";
+        iconMenu.style.cssText=" visibility:hidden ;";
+     
+    }
+    
+    iconMenu2.onclick= function cerrar(){
+        nav.style.cssText="transform:translateY(-100%);"
+        iconMenu2.style.cssText=" visibility:hidden ;";
+        iconMenu.style.cssText=" visibility:visible ;";
+        
+    }
+
 
 }
-function cerrarMenu(){
-    //variables
-    let nav=document.getElementById("nav");
-    let iconMenu=document.getElementById("icon-menu");
-    let iconX=document.getElementById("icon-x");
-    
-    //eventos
-
-    nav.style.cssText="transform: translateX(100%); transition: all .3s;";
-    iconMenu.style.cssText="display:block;";
-    iconX.style.cssText="display:none;";
-
-}
-
