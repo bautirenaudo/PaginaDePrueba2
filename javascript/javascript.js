@@ -15,14 +15,14 @@ function main(){
 
     //menu pricipal
     iconMenu.onclick= function abrir(){
-        nav.style.cssText="transform: translateY(0%);"
+        nav.style.cssText="transform: translateX(0%);"
         iconMenu2.style.cssText=" visibility:visible ;";
         iconMenu.style.cssText=" visibility:hidden ;";
      
     }
     
     iconMenu2.onclick= function cerrar(){
-        nav.style.cssText="transform:translateY(-100%);"
+        nav.style.cssText="transform:translateX(-100%);"
         iconMenu2.style.cssText=" visibility:hidden ;";
         iconMenu.style.cssText=" visibility:visible ;";
         
