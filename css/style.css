@@ -95,7 +95,6 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    padding-top: 7px;
     align-items: center;
     justify-content: center; 
     transition: all .2s;
@@ -116,7 +115,7 @@
 #circulo-menu2{
     visibility: hidden;
 }
-#redes div a{
+#redes div a, #redes div span{
     display: block;
     text-decoration: none;
     font-size: 40px;
