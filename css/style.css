@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 #menu{
@@ -25,6 +26,8 @@
     list-style: none;
     margin-bottom: 60px;
     padding: 10px; 
+    padding-left: 0;
+    padding-left: 0;
 }
 #menu nav li:hover {
     background-color: rgba(27, 27, 27, 0.247);
@@ -37,6 +40,8 @@
     color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 10px;
+    display: block;
+    
 }
 .icon-menu{
     color: white;
@@ -69,6 +74,59 @@
 }
 
 
+
+
+
+
+
+#redes{
+    display: block;
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+    z-index: 200;
+    
+}
+
+#redes .circulo{
+    display: flex;
+    position: absolute;
+    background-color: black;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding-top: 7px;
+    align-items: center;
+    justify-content: center; 
+    transition: all .2s;
+    
+}
+#circulo-instagram{
+    transform: translateY(0%);
+}
+#circulo-facebook{
+    transform: translateY(0%);
+}
+#circulo-mail{
+    transform: translateY(0%);
+}
+#circulo-menu{
+    
+}
+#circulo-menu2{
+    visibility: hidden;
+}
+#redes div a{
+    display: block;
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+}
+
+
+
+
+
 @media screen and (max-width:1150px){
     #fondo{
         display: block;
@@ -83,6 +141,12 @@
 }
 
 @media screen and (max-width:600px){
+    #menu nav{
+        padding-top: 30%;
+    }
+    
+    
+    
     #fondo{
         display: block;
         width: 100%;
@@ -94,4 +158,5 @@
         height: 1000px;
         transform: translateX(-500px);
     }
+
 }
