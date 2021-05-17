@@ -408,7 +408,7 @@
                  display: block;
                  width:100%; 
                  text-align: center;
-                 margin-top: 200px;
+                 margin-top: 150px;
              }
              #cuerpo #cuerpo-icono img{
                  width: 200px;
@@ -424,7 +424,7 @@
                   text-align: center;
              }
              #cuerpo #nombre h1{
-                 font-size: 70px;
+                 font-size: 60px;
                  font-family: 'Inconsolata', monospace;
                  font-weight: 100;
                  color: rgb(241, 241, 241);
