@@ -70,6 +70,10 @@
         transform: rotate(0deg);
     }
 }
+/*MENU2*/
+#header2{
+    display: none;
+}
 /*MENU*/
 #header1{
     display: block;
@@ -203,6 +207,7 @@
          width: 100%;
          text-align: center;
          box-shadow: 0px 10px 25px 1px black;
+         
      }
      #header1 nav{
         background-color: rgb(54, 11, 11);
@@ -313,13 +318,13 @@
 
 
              /*MENU-ICONO*/
-             #header1 #header1-icono{
+             #header2 #header2-icono{
                  display: block;
                  position: absolute;
                  width: 100%;
              }
              
-             #header1 #header1-icono img{
+             #header2 #header2-icono img{
                 display: none;
                 width: 100px;
                 padding: 25px;
@@ -350,8 +355,13 @@
                      transform: rotate(0deg);
                  }
              }
+
              /*MENU*/
              #header1{
+                 display: none;
+             }
+             /*MENU2*/
+             #header2{
                  display: block;
                  position: absolute;
                  background-color: rgba(54, 11, 11, 0.966);
@@ -365,28 +375,28 @@
                  transform: translateX(-100%);
                  transition: all .3s;
              }
-             #header1 nav{
+             #header2 nav{
                 display: block;
                 position: absolute;
                 width: 100%;
                 background-color: rgba(255, 255, 255, 0);     
              }
-             #header1 nav ul{
+             #header2 nav ul{
                 margin: 0 auto;
              }
-             #header1 nav ul li{
+             #header2 nav ul li{
                  display: block;
                  padding: 50px;
                  margin-right: 0px;
                  position: relative;
              }
-             #header1 nav ul #aboutUs{
+             #header2 nav ul #aboutUs{
                  margin-right: 0;
              }
-             #header1 nav ul li a:hover{
+             #header2 nav ul li a:hover{
                  color: rgb(255, 214, 214);
              }
-             #header1 nav ul li a{
+             #header2 nav ul li a{
                  position: relative;
                  font-size: 25px;
                  font-family: 'Oswald', sans-serif;
