@@ -1,12 +1,22 @@
 function main(){
-    let tocar= document.getElementById("tocar");
-    let c2= document.getElementById("circulo2");
-    let c1=document.getElementById("circulo1");
-  
-    tocar.onclick=function a(){
-       c2.style.cssText="animation-name: bro;animation-duration: 15s;animation-iteration-count:infinite ;"; 
-       c1.style.cssText="animation-name: ceja;animation-duration: 3s;animation-iteration-count:infinite ;";
+    //variables
+    let header1=document.getElementById("header1");
+    let iconMenu=document.getElementById("icon-menu");
+    let iconMenu2=document.getElementById("icon-menu2");
+
+    //eventos
+
+    iconMenu.onclick=function abrir(){
+        header1.style.cssText="transform: translateX(0%);"; 
+        iconMenu.style.cssText="visibility:hidden;";   
+        iconMenu2.style.cssText="visibility:visible;"; 
     }
-    
-   
+
+    iconMenu2.onclick=function cerrar(){
+        header1.style.cssText="transform: translateX(-100%);"; 
+        iconMenu.style.cssText="visibility:visible;";   
+        iconMenu2.style.cssText="visibility:hidden;"; 
+    }
+
+
 }

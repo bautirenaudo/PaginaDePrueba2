@@ -1,147 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title> Prueba </title> 
+    <title> Prueba2 </title> 
       <link rel="icon" type="image/icon" href=""> 
       <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="style.css">
+      
       <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">  
+      
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Oswald:wght@200&display=swap" rel="stylesheet">    
     
 </head>
- 
+
 <body onload="main()">
 
-  <div id="cont">
-    <div id="circulo1"></div>
-    <div id="circulo2"></div>
-    <div class="circulo3"><div class="circulo4"></div></div>
-  </div>
+  <div id="contenedor">
 
-  
+    <div id="fondo">
+      <video muted autoplay loop
+       src="videos/video barberia.mp4"></video>
+    </div>
 
-  </div><div id="tocar"></div>
+    <div id="iconMenu">
+        <span class="icon-menu" id="icon-menu"></span>
+        <span class="icon-menu" id="icon-menu2"></span>
+      </div>
 
-  
-  
+    <header id="header1">
+    
+      <div id="header1-icono">
+         <img src="imagenes/logo.png" alt="">
+      </div>
+      
+      <nav>
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="">GALLERY</a></li>
+          <li><a href="">CONTACT US</a></li>
+          <li id="aboutUs"><a href="">ABOUT US</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="cuerpo">
+      <div id="cuerpo-icono">
+        <img src="imagenes/logo.png" alt="icono">
+      </div>
+
+      <div id="nombre">
+        <h1>BAREBRIA DIVINOS SHOP</h1>
+      </div>
 
 
-
-
-<style>
-body{
-  background-color: rgb(43, 43, 43);
-}
-
-#tocar{
-  display: block;
-  position: absolute;
-  z-index: 100;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 128, 0, 0);
-  
-
-}
-@keyframes bro{
-  0%{
-    background-color:rgb(23, 30, 100) ;
-  }
-  25%{
-    background-color:rgb(13, 138, 96) ;
-  }
-  50%{
-    background-color:rgb(119, 146, 21) ;
-  }
-  75%{
-    background-color:rgb(121, 0, 6) ;
-  }
-  100%{
-    background-color:rgb(255, 81, 50) ;
-  }
-}
-@keyframes ceja{
-  0%{
-    margin-bottom: 290px;
-  }
-  50%{
-    margin-bottom: 500px;
-  }
-  100%{
-    margin-bottom: 290px;
-  }
-}
-
-#cont{
-  display: flex;
-  position:absolute ;
-  background-color: powderblue;
-  width:  100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-#cont div{
-  display: block;
-  position: absolute;
-}
-#circulo1{
-  background-color: black;
-  width: 400px;
-  height: 50px;
-  border-radius: 5% 20% 10% 5%;
-  margin-bottom: 290px;
-}
-
-#circulo2{
-  background-color: rgb(23, 30, 100);
-  width: 500px;
-  height: 220px;
-  border-radius: 100%;
-}
-
-.circulo3{
-  background-color: rgb(180, 38, 126);
-  width: 200px;
-  height: 200px;
-  border-radius: 100%;
-}
-.circulo4{
-  background-color: powderblue;
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  animation-name: pupila;
-  animation-iteration-count: infinite;
-  animation-duration: 10s;
-}
-@keyframes pupila {
-  0%{
-    top: 110px;
-    left: 20px;
-  }
-  25%{
-    top: 110px;
-    left: 110px;
-  }
-  50%{
-    top: 30px;
-    left: 100px;
-  }
-  75%{
-    top: 30px;
-    left: 30px;
-  }
-  100%{
-    top: 110px;
-    left: 20px;
-  }
-}
+    </div>
 
 
 
 
+</div>
 
-</style>
+
+
+
 
 <script src="javascript/javascript.js"></script>
 </body>
